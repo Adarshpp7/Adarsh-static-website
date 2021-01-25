@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/jpg" href="imageicon.jpg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="style.css" type="css" rel="stylesheet">
+
 </head>
 <body>
     <header class="bg-primary" style="position: fixed; width: 100%;z-index: 1;">
@@ -148,7 +149,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Higher Seconary Education</h5>
                           <p class="card-text">Govt.MOPLA Higher Secondary <br>Koyilandy</p>
-            School
+            
                         </div>
                     </div>
 
@@ -170,32 +171,36 @@
     <section id="contact-section">
         <h2 class="text-center p-3">Contact Me</h2>
         <div class="container p-3">
-                <form>
+                <form  id="submit-form"  action="">
                     <div class="form-row">
                       <div class="form-group  col-md-4">
                             <label for="inputname">Name</label>
-                            <input type="text" class="form-control" id="inputname" placeholder="enter your name here" required>
+                            <input type="text" class="form-control" id="inputname" name="Name" minlength="3" placeholder="enter your name here" required="true">
                       </div>
                       <div class="form-group  col-md-4">
                         <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                        <input type="email" class="form-control" id="inputEmail4" name="Email" placeholder="Email" required="true">
                       </div>
-                      <div class="form-group  col-md-4">
+                      <div class="form-group  col-md-4"> 
                         <label for="inputnumber">Mobile number</label>
-                        <input type="number" class="form-control" id="inputnumber" placeholder="Type your number here" required>
+                        <input type="text" class="form-control" id="inputnumber" name="Number" pattern="[789][0-9]{9}" placeholder="Type your 10 digit number here" required="true">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="message">message</label>
-                      <textarea class="form-control" cols="10" rows="6" id="message" type="text" placeholder="convey me your thoughts " required></textarea>
+                      <textarea class="form-control" cols="10" rows="6" id="message" type="text" name="Message" placeholder="convey me your thoughts " required="true"></textarea>
                     </div>
                     <div class="form-group">
                       <div class="text-center col-md-12 bg-primary">
                         <button type="submit" class="btn btn-primary">Submit</button>
                         
+
+    
+
+
                       </div>
                     </div>
-                  </form>
+                </form>
         </div>
     </section>
     <footer class="bg-info">
@@ -225,10 +230,15 @@
 
 
 
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/c7b85fc5a3.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+
+
 </body>
 </html>
